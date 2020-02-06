@@ -1,0 +1,16 @@
+AddDefaultCharset utf-8
+DirectoryIndex index.php
+
+RewriteEngine on
+
+RewriteRule ^([a-z0-9]*)$ index.php?f=$1 [L]
+RewriteRule ^news/([0-9]*)$ index.php?f=news&nid=$1 [L]
+RewriteRule ^news/page-([0-9]*)$ index.php?f=news&page=$1 [L]
+RewriteRule ^stat/s([0-9]*)$ index.php?f=stat&sid=$1 [L]
+RewriteRule ^stat/([a-z]*)/s([0-9]*)$ index.php?f=stat&act=$1&sid=$2 [L]
+RewriteRule ^stat/([a-z]*)/s([0-9]*)/clan([0-9]*)$ index.php?f=stat&act=$1&sid=$2&clan=$3 [L]
+RewriteRule ^cp/([a-z]*)$ index.php?f=cp&opt=$1 [L]
+RewriteRule ^cp/char([0-9]*)/s([0-9]*)$ index.php?f=cp&opt=charinfo&char=$1&sid=$2 [L]
+RewriteRule ^cp/support/([0-9]*)$ index.php?f=cp&opt=support&act=write&s=$1 [L]
+RewriteRule ^cp/robo/s([0-9]*)$ index.php?f=cp&opt=robo&sid=$1 [L]
+RewriteRule ^cp/bill/([A-Z0-9]*)/s([0-9]*)$ index.php?f=cp&opt=robo&act=bill&inv=$1&sid=$2 [L]

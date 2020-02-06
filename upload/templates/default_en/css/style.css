@@ -1,0 +1,125 @@
+/* 
+=============================================================
+This Skin for STRESS WEB Developed by S.T.R.E.S.S.
+
+File 'css.css' - Cascading Style Sheet (CSS) Document
+=============================================================
+*/
+* { margin: 0px; padding: 0px; }
+html, body {
+	width: 100%;
+	height: 100%;
+	padding: 0px;
+	margin: 0px;
+	color: #eee;
+	font: 11px/18px Tahoma, Arial, Helvetica, sans-serif;
+	background: #000;
+}
+a {
+	color: #955c2f;
+	outline: none;
+	text-decoration: none;
+}
+a:hover {
+	text-decoration: underline;
+}
+p {
+	margin: 0;
+}
+img {
+	border: none;
+}
+input {
+	outline: none;
+	vertical-align: middle;
+}
+input[type=text], input[type=password], select {background: #533b2f; border: 1px solid #6b5950; color: #eee; height: 18px; font-size: 10px;}
+textarea {background: #533b2f; border: 1px solid #6b5950; color: #eee;}
+.clr {clear: both;}
+
+
+#wrapper {min-height: 100%; height: auto !important; height: 100%; width: 1001px; margin: 0 auto; border-left: 1px solid #6b5950; border-right: 1px solid #6b5950; background: #3e2d25;}
+
+/* Container
+-----------------------------------------------------------------------------*/
+#container {
+	width: 100%;
+	padding: 0 0 80px;
+	height: 1%;
+}
+#container:after {
+	content: '.';
+	display: block;
+	clear: both;
+	visibility: hidden;
+	height: 0;
+}
+/* Sidebar
+-----------------------------------------------------------------------------*/
+#sidebar {float: left; width: 200px; margin-left: -100%; position: relative;}
+
+#stitle {font-size: 14px; padding: 5px 0 5px 10px; border-bottom: 1px solid #888; margin-bottom: 5px; color: #a7472f;}
+#stitle span {font-weight: bold;}
+
+#menu { padding-left: 25px; margin-bottom: 20px;}
+#menu a {font-size: 12px;}
+#menu ul {list-style: none;}
+
+#login {margin-bottom: 20px;}
+#login table {margin: 0 auto;}
+#cp {margin-bottom: 20px; padding-left: 25px;}
+
+#l2pvp, #l2pk {width: 180px; margin: 0 auto 20px;}
+/* Main
+-----------------------------------------------------------------------------*/
+#main { width: 100%; background: url(../images/h.jpg) right 0 no-repeat; position: relative; float: left;}
+
+#head { height: 440px; position: relative;}
+
+.langs { text-align: right; padding-right: 10px;}
+.langs img {margin: 2px;}
+
+#content {min-height: 80px; padding: 0 15px 0 215px; position: relative;}
+/* Footer
+-----------------------------------------------------------------------------*/
+#footer {
+	width: 1001px;
+	margin: -60px auto 0;
+	height: 60px;
+	border-top: 1px solid #6b5950;
+	text-align: center;
+}
+
+/***************************
+* server status
+***************************/
+#server {width: 190px; margin: 0 auto 20px;}
+#server .name { text-align: left; }
+#server a {font-weight: bold;}
+#server th {padding: 2px; line-height: 12px; font-size: 10px;}
+#server td { padding: 1px; height: 20px; text-align: center; }
+/***************************
+* news
+***************************/
+#news { margin-bottom: 25px; position: relative;}
+#news .ndate {text-indent: 30px; font-size: 11px; font-weight: normal;position: absolute; top: 0; right: 0;}
+#news .ntitle { font-size: 12px; font-weight: bold; text-indent: 30px; text-align: left; position: relative;border-bottom: 1px solid #544; padding-bottom: 5px; color: #a7472f;}
+#news .ntitle a { font-size: 12px; font-weight: bold; color: #a7472f; }
+#news .ninfo { text-align:right; color: #955c2f; padding: 10px 0; position: relative;}
+#news .ncontent { text-align: justify; padding: 5px 0; text-indent: 30px;}
+#news .nimg {}
+#news .vklike {padding: 0; margin: 0; height: 18px; position: absolute; left: 0; top: 10px;}
+#news .like {padding: 0; margin: 0; clear: none;}
+/***************************
+* lastpost
+***************************/
+#lastpost {width: 180px; margin: 0 auto 20px;}
+#lastpost .lastdate, #lastpost .lastlink {text-align: left;}
+#lastpost .lastdate a {text-decoration: underline; color: #b58763;}
+#lastpost .lastlink {padding-bottom: 5px;}
+/***************************
+* static pages
+***************************/
+#static {width: 100%;}
+#static .title {font-size: 15px; text-align: center;}
+#static .content {text-align: justify;}

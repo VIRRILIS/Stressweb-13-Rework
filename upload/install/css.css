@@ -1,0 +1,47 @@
+body {
+	margin: 0;
+	padding: 0;
+	background: #DDD;
+	font-family: Verdana;
+	font-size: 11px;
+	line-height: 16px;
+}
+.ins_tab {
+	background-color: #1149ee;
+	border: 1px solid;
+}
+.ins_tab td {
+	padding: 5px;
+	text-align: left;
+}
+.header {
+	background: url('images/header.png') repeat-x;
+	height: 50px;
+	font-size: 13px;
+	font-weight: bold;
+}
+.cont_tab {
+	border: 1px solid;
+	border-top: 3px solid;
+	background: #005 no-repeat;
+	width: 610px;
+}
+.content1 {
+	width: 450px;
+	border: 1px solid;
+	border-bottom: none;
+	background: #fff;
+	height: 60px;
+}
+.content2 {
+	width: 450px;
+	background: #FFF;
+	border: 1px solid;
+	border-top: none;
+}
+.content3 {
+	width: 440px;
+	padding: 5px;
+	overflow: auto;
+	border: none;
+}

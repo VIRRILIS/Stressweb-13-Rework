@@ -1,0 +1,399 @@
+* {margin: 0; padding: 0;}
+html,body {
+	width: 100%;
+	min-width: 900px;
+	height: 100%;
+	font-size: .8em;
+	font-family: Arial, "Trebuchet MS", Arial, Helvetica, sans-serif;
+	margin: 0px;
+	padding: 0px;
+	/*background: #CCC;*/
+	background: #E4E4E4 url(bg.jpg) 0 0 repeat-x;
+}
+/*
+a {
+	font-size: 13px;
+	color: #186899;
+	text-decoration: none;
+}*/
+a {outline: none;}
+a:active,
+a:visited,
+a:link {
+	color: #4b719e;
+	text-decoration:none;
+	}
+
+a:hover {
+	color: #4b719e;
+	text-decoration: underline;
+	}
+a.active {font-weight: bold;}
+/*
+td {
+	font-size: 12px;
+}*/
+table{
+border:0px;
+border-collapse:collapse;
+}
+
+table td{
+font-size: 11px;
+font-family: verdana;
+}
+img {
+	border: none;
+}
+input,
+select {
+	font-size: 11px;
+}
+#wrapper {
+	width: 900px; 
+	min-height: 100%;
+	height: auto !important;
+	height: 100%;
+	margin: 0 auto; 
+	position: relative;
+}
+.swlogo {background: url(logo.png) 0 0 no-repeat; height: 53px; width: 160px; position: absolute; top: 0; left: 0; z-index: 15;}
+.swlogo a {display: block; height: 53px; width: 160px;}
+
+#navig {height: 58px; position: relative; border: 0; padding-left: 180px; z-index: 10;}
+#navig ul {list-style: none;}
+#navig ul li {float: left; padding: 0 15px;}
+#navig ul li a {color: #999; font: 11px/55px Arial; text-transform: uppercase; font-weight: bold; text-shadow: 1px 1px 0px #000; text-decoration: none;}
+#navig ul li a:hover {text-shadow: -1px -1px 0px #000;} 
+
+#acc {position: absolute; width: 200px; top: 20px; right: 15px; color: #fff; z-index: 9; text-align: right;}
+
+.pagetitle {color: #222222; height: 62px; font: 25px/55px "Comic Sans MS"; text-shadow: 1px 1px 0px #aaaaab; text-indent: 50px;}
+
+#footbar {text-align: center; background: #EAEAEB; color: #888888; width: 100%; height: 55px; border-top: 1px solid #D6D6D7; text-shadow: 1px 1px 0px #fff; font-size: 13px; line-height: 45px; font-family: Arial; position: fixed; bottom: 0; left: 0;}
+#footbar a {color: #669000;}
+.footbar {width: 900px; margin: 0 auto; text-align: right;}
+
+#nav { position: relative; padding-top: 5px;}
+#nav ul {list-style: none;}
+#nav ul li {float: left; padding: 0 25px 0 5px;}
+
+.content {width: 100%; padding: 5px 5px 60px 5px;}
+.clear {clear: both;}
+
+.swbutton a {
+	float: left;
+	color: #5e7694;
+	text-shadow: 1px 0px 0px #9fd4f4;
+	font: 11px/25px Tahoma; 
+	font-weight: bolder;
+	text-decoration: none;
+	display: block;
+	width: 150px;
+	height: 25px;
+	border-top: 1px solid #c5c5c5;
+	border-left: 1px solid #d0d0d0;
+	border-right: 1px solid #d0d0d0;
+	border-bottom: 1px solid #d2d2d2;
+	-webkit-border-radius: 4px;
+	-moz-border-radius: 4px;
+	border-radius: 4px;
+	text-align: center;
+	background: #f6f6f6;
+}
+.swbutton a:hover {
+	color: #fff;
+	text-shadow: 1px 1px 0px #000;
+	border-top: 1px solid #4A5358;
+	border-left: 1px solid #A2A3A7;
+	border-right: 1px solid #A2A3A7;
+	border-bottom: 1px solid #4A5358;
+	background: #1C2125;
+}
+.swbutton2 {
+	color: #fff;
+	text-shadow: 1px 1px 0px #000;
+	font: 11px/15px Tahoma; 
+	font-weight: bolder;
+	text-decoration: none;
+	display: block;
+	padding: 5px 10px;
+	margin: 5px 0;
+	height: 25px;
+	border-top: 1px solid #4A5358;
+	border-left: 1px solid #A2A3A7;
+	border-right: 1px solid #A2A3A7;
+	border-bottom: 1px solid #4A5358;
+	-webkit-border-radius: 4px;
+	-moz-border-radius: 4px;
+	border-radius: 4px;
+	text-align: center;
+	background: #1C2125;
+	cursor: pointer;
+}
+.aleft {float: left;}
+.aright {float: right;}
+.swbutton2:hover {
+	color: #5e7694;
+	text-shadow: 1px 0px 0px #9fd4f4;
+	border-top: 1px solid #c5c5c5;
+	border-left: 1px solid #d0d0d0;
+	border-right: 1px solid #d0d0d0;
+	border-bottom: 1px solid #d2d2d2;
+	background: #f6f6f6;
+}
+
+
+#menu a {
+	font-size: 13px;
+	color: #222222;
+	font-weight: bold;
+	text-decoration: none;
+	display: block;
+	margin: 3px 0 3px 0;
+}
+#menu a:hover {
+	color: #00beda;
+}
+.tab td {
+	padding-left: 3px;
+}
+.copyright {
+	color: #fff;
+}
+.error {
+	text-align: center;
+	color: red;
+	padding: 20px 0px 25px 0px;
+}
+.no_error {
+	text-align: center;
+	color: green;
+	padding: 20px 0px 25px 0px;
+}
+.description {
+	font-size: 10px;
+	color: #777;
+	padding-left: 10px;
+	font-weight: normal;
+}
+.button {
+	margin: 10px 0px 5px 10px;
+	background: #333;
+	color: white;
+}
+#center {
+	text-align: center;
+}
+.news_tab th {
+	text-align: center;
+	font-weight: bold;
+	font-size: 12px;
+	border-bottom: 1px solid #333;
+}
+.news_tab td {
+	padding: 4px 0px 4px 0px;
+	text-align: center;
+	border-bottom: 1px dashed #999;
+}
+.news_tab .Left {
+	text-align: left;
+}
+.title {
+	font-size: 13px;
+	font-weight: bold;
+	text-align: center;
+	padding: 5px 0px 10px 0px;
+}
+.tdLeft {
+	font-size: 11px;
+	border-bottom: 1px dotted #888;
+	padding: 5px 0px;
+	color: #444;
+	text-align: left;
+	width: 650px;
+}
+.tdRight {
+	font-size: 11px;
+	border-bottom: 1px dotted #888;
+	padding: 5px 0px;
+	color: #444;
+	text-align: center;
+	width: 250px;
+}
+.tdRight input, .tdRight select {font-size: 10px;}
+.tdRight textarea {font-size: 11px;}
+.tdTitle {
+	font-weight: bold;
+	background: #000;
+	color: #FFF;
+	height: 20px;
+}
+.trRowA {
+	background: #AFA;
+}
+.trRowB {
+	background: #FAA;
+}
+.trRowC {
+	background: #DDF;
+}
+.trRowOn {
+	background: #999;
+}
+.tabTitle {
+	background: #333;
+	color: #EEE;
+	height: 30px;
+}
+.tdRow {
+	height: 25px;
+}
+.tooltip {
+	visibility: hidden; 
+	position: absolute; 
+	background: #f9aaf9; 
+	width: 250px;
+	padding: 3px;
+	margin-top: 15px;
+}
+#form_item_edit {
+	border-style:solid; 
+	border-color:#000000; border-width:1px; width: auto; height: auto; 
+	background-color:#f5f5f5; padding:3px; z-Index:3;
+}
+
+#form_item_edit .editl { width: 100px; text-align: right; vertical-align: middle; font-weight: bold; padding: 1px 5px; }
+#form_item_edit .editr { width: 150px; text-align: left; vertical-align: middle; padding: 1px 5px; }
+#form_item_edit .readonly { color: rgb(80,80,80); background-color: rgb(240,240,240); }
+
+.inbutton {height: 20px; font: 10px/15px Tahoma; color: #000; border: 1px solid #ccc; cursor: pointer; background: #EFEFF0; padding: 3px;}
+
+.shadow {
+	-webkit-box-shadow: -1px -1px 2px 1px #444;
+	-moz-box-shadow: -1px -1px 2px 1px #444;
+	box-shadow: -1px -1px 2px 1px #444;
+	color: #000;
+	text-shadow: 1px 0px 0px #666;
+	
+}
+#List { 
+	width: 100%;
+	color: #555;
+	border-collapse: collapse;
+	border: 1px solid rgb(200,200,180);
+	border-bottom: 1px solid #000;
+	-webkit-box-shadow: -1px -1px 2px 1px #444;
+	-moz-box-shadow: -1px -1px 2px 1px #444;
+	box-shadow: -1px -1px 2px 1px #444; 
+}
+#List tr {
+	height: 25px;
+}
+
+#List td {
+	padding: 0 2px 0 3px;
+	font-size: 10px;
+}
+#List .header { 
+	font-weight: bold;
+	background: #86AECA;
+	border-top: 1px solid rgb(180, 180, 180);
+	border-bottom: 1px solid rgb(180, 180, 180);	
+}
+
+#List .ban {
+	background: rgb(240, 240, 230);
+	border-bottom: 1px solid rgb(200,200,180);
+}
+
+#List .jail {
+	background: rgb(240, 240, 230);
+	border-bottom: 1px dotted rgb(0,0,0);
+}
+
+#List .offline {
+	background: #ddaafd;
+	border-bottom: 1px solid rgb(190,190,170);
+}
+
+#List .online {
+	background-color: #ddddff;
+	border-bottom: 1px solid rgb(190,190,170);
+}
+
+#List .admin {
+	color: green;
+	font-weight: bold;
+}
+
+#List tr.offline:hover {
+	background-color: rgb(255,255,128);
+}
+
+#List tr.online:hover {
+	background-color: rgb(255,255,128);
+}
+
+#List tr.border {
+	border-top: 1px solid rgb(180,180,180);
+	border-bottom: 1px solid rgb(180,180,180);
+}
+
+#List a {
+	color: darkblue;
+}
+
+.navigation {
+	color: #999898;
+	font-size: 11px;
+	font-family: tahoma;
+}
+
+td.editl { width: 180px; text-align: right; vertical-align: middle; font-weight: bold; padding: 1px 5px; }
+td.editr { width: 150px; text-align: left; vertical-align: middle; padding: 1px 5px; }
+.warning {
+	font-weight: bold;
+	color: #F00;
+}
+/***************************
+* page lister
+***************************/
+#pager {
+	margin: 0px;
+	padding: 0px;
+	padding-bottom: 2px;
+}
+#pager a {
+	text-decoration: none;
+	color: black;
+	padding: 1px 5px 1px 5px;
+	font-size: 11px;
+	border: none;
+	background: #999;
+}
+#pager a:hover {
+	text-decoration: none;
+	color: #fff;
+	padding: 1px 5px 1px 5px;
+	font-size: 11px;
+	border: none;
+	background: #111;	
+}
+#pager a.nopager {
+	text-decoration: none;
+	color: #9898ee;
+	padding: 1px 5px 1px 5px;
+	font-size: 11px;
+	border: none;
+	background: #ccc;
+}
+
+.ticketDiv {
+	padding: 5px;
+	position: absolute; 
+	background: #EE9;
+	width: 300px;
+	min-height: 50px;
+}
+
