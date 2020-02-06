@@ -127,25 +127,24 @@ class Functions extends La2
 			return file_exists( ROOT_DIR . 'items' . DS . $id . '.gif' );
 		}
 
-		function GetCache($file, $lang = true) {
-			global $l2cfg;
+	function GetCache( $file, $lang = true ) 
+	{
+		global $l2cfg;
 
-			if ($lang) {
-				$cache = ROOT_DIR . 'cache' . DS . $l2cfg['lang'] . '_cache_' . $file . '.sw';
-			} 
-else {
-				$cache = ROOT_DIR . 'cache' . DS . 'cache_' . $file . '.sw';
-			}
+		$cache = ROOT_DIR . 'cache' . DS . ( $lang ? $l2cfg['lang'] . '_' : '' ) . 'cache_' . $file . '.sw';
+		
+		if ( !file_exists( $cache ) )
+			return false;
+			
+		$data = unserialize( file_get_contents( $cache ) );
 
-			unserialize( @file_get_contents( $cache ) );
-			$data = '';
-
-			if (( !isset( $data['timer'] ) || $data['timer'] < time(  ) )) {
-				return false;
-			}
-
-			return $data['data'];
+		if ( !isset( $data['timer'] ) || $data['timer'] < time() ) 
+		{
+			return false;
 		}
+
+		return $data['data'];
+	}
 
 	function SetCache($file, $data, $time, $lang = true) 
 	{
